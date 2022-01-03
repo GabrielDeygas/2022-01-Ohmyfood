@@ -1,0 +1,14 @@
+@import "./utils/variables", "./utils/functions", "./utils/mixins";
+@import "./layout/header", "./layout/footer";
+@import "./pages/home-location", "./pages/home-reservations", "./pages/home-choice";
+@import "./components/all-btn", "./components/all-cards", "./pages/home-restaurants";
+
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+}

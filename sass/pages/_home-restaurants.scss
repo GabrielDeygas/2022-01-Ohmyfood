@@ -1,0 +1,77 @@
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $light-background;
+    &__title {
+
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 50px repeat(4, 1fr);
+    row-gap: 2rem;
+    width: 90%;
+    padding: .5rem .5rem 5rem .5rem;
+}
+
+.card {
+    display: block;
+    background-color: white;
+    border-radius: 1rem;
+    padding-bottom: 10.5rem;
+        &:link {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+    &__img {
+        position: absolute;
+        width: 90%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+    &__all-text {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 155px;
+        width: 100%;
+        padding: .3rem 0 .3rem 0;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+    }    
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 0 0 .3rem .5rem;
+    }
+    &__undertitle{
+        padding-left: .5rem;
+    }
+    &__like {
+        display: flex;
+        align-items: center;
+        padding-right: 1rem;
+    }
+}
+
+
+
+/* Position modifier of cards content with no label 'nouveau' */
+.all-text--nolab {
+    top: 183px;
+}

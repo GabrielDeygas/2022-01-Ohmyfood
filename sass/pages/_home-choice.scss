@@ -1,0 +1,45 @@
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    &__container {
+        width: 95%;
+    }
+    &__title {
+        width: 100%;
+        font-size: 1.2rem;
+        
+    }
+    &__num {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: -13px;
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+        color: white;
+        background-color: $color-primary;
+        border-radius: 50%;
+        padding: .1rem;
+    }
+    &__box {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       background-color: $lighter-background;
+       padding: 1.5rem .5rem 1.5rem 0;
+       margin-bottom: 1rem;
+       box-shadow: 2px 3px 10px grey;
+       &__ico {
+           display: flex;
+           align-items: center;
+           padding: 0 1.4rem 0 .5rem;
+       }
+       &__txt {
+           font-size: 1.2rem;
+       }
+    }
+}

@@ -1,0 +1,12 @@
+.header {
+    @include usualDisplay;
+    position: relative;
+    height: 50px;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    box-shadow: $shadow-bottom;
+    &__img {
+        width: 120px;
+        height: 30px;
+    }
+}

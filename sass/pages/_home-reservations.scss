@@ -1,0 +1,20 @@
+.reservations {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 17.5vw 1rem 17.5vw;
+    background-color: $lighter-background;
+    margin-bottom: 1rem;
+    text-align: center;
+    &__title {
+        max-width: 320px;
+        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+    &__text {
+        max-width: 350px;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #353535;
+    color: white;
+    &__title {
+        padding-left: 2rem;
+        font-style: italic;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+
+    }
+    &__ul {
+        list-style-type: none;
+        &__li {
+            display: flex;
+            align-items: center;
+            padding: 0 0 .3rem 0;
+        }
+        &__img {
+            width: 20px;
+            height: 20px;
+            padding-right: .5rem;
+        }
+    }
+}
+
+
+/* Applying a different margin for alignement of the two firsts li */
+.footer__ul__li--different-margin {
+    margin-left: -23.2px;
+}
+
+/* Applying a different padding for alignement of the two lasts li */ 
+.footer__ul__li--different-padding {
+    padding-left: .3rem;
+}

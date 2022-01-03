@@ -1,0 +1,21 @@
+/* Creation of the 'explore button', not re-used atm */
+
+.btn-explore {
+    display: flex;
+    max-height: 30px;
+    padding: .5rem .7rem .5rem .7rem;
+    align-items: center;
+    background: linear-gradient($color-secondary, $color-primary);
+    border-radius: 3rem;
+    &__text {
+        font-size: 1rem;
+        text-align: center;
+        height: 20px;
+        color: white;
+        min-width: 180px;
+    }
+}
+
+.btn-radius {
+    border-radius: 1rem;
+}
