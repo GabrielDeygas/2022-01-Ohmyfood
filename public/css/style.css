@@ -1,16 +1,23 @@
 .header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  box-shadow: 0 4px 10px -2px #c4c4c4;
+  background-color: white;
+}
+.header__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  min-width: 100%;
-  position: relative;
   height: 50px;
   align-items: center;
-  padding: 1rem 0 1rem 0;
-  box-shadow: 0 4px 10px -2px #c4c4c4;
 }
 .header__img {
+  position: relative;
   width: 120px;
   height: 30px;
 }
@@ -100,6 +107,14 @@
   margin-bottom: 1.5rem;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .choice {
   display: flex;
   flex-direction: column;
@@ -145,6 +160,143 @@
   font-size: 1.2rem;
 }
 
+.restaurant-cover__img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
+  margin: 0;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.container {
+  display: grid;
+  grid-template-rows: 50px repeat(4, 1fr);
+  row-gap: 2rem;
+  width: 90%;
+  padding: 0.5rem 0.5rem 5rem 0.5rem;
+}
+
+.card {
+  display: block;
+  background-color: white;
+  border-radius: 1rem;
+  padding-bottom: 10rem;
+}
+.card:link {
+  text-decoration: none;
+  color: inherit;
+}
+.card:visited {
+  text-decoration: none;
+  color: inherit;
+}
+.card__img {
+  position: absolute;
+  width: 90%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+.card__all-text {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 155px;
+  width: 100%;
+  padding: 0.3rem;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+.card__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0.3rem 0.5rem;
+}
+.card__undertitle {
+  padding-left: 0.5rem;
+}
+.card__like {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+/* Position modifier of cards content with no label 'nouveau' */
+.all-text--nolab {
+  top: 178px;
+}
+
+.container-menu {
+  width: 90%;
+  margin-top: -4rem;
+  background-color: #f1f1f1;
+  padding: 0 5vw 0 5vw;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-header__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  padding-right: 1rem;
+}
+
+.menus-all {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.menus__title {
+  text-transform: uppercase;
+}
+.menus__container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.menus__txt {
+  flex: 1;
+}
+.menus__plate {
+  font-size: 1.1rem;
+  margin: 0.1rem;
+  font-weight: bold;
+}
+.menus__description {
+  margin: 0.1rem;
+  font-style: italic;
+}
+.menus__price {
+  display: flex;
+  align-items: center;
+}
+
 /* Creation of the 'explore button', not re-used atm */
 .btn-explore {
   display: flex;
@@ -179,78 +331,23 @@
   margin-right: 0.75rem;
   color: green;
   background-color: #99E2D0;
+  border-radius: 0.5rem;
 }
 
-.main-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-.container {
-  display: grid;
-  grid-template-rows: 50px repeat(4, 1fr);
-  row-gap: 2rem;
-  width: 90%;
-  padding: 0.5rem 0.5rem 5rem 0.5rem;
-}
-
-.card {
-  display: block;
-  background-color: white;
-  border-radius: 1rem;
-  padding-bottom: 10.5rem;
-}
-.card:link {
-  text-decoration: none;
-  color: inherit;
-}
-.card:visited {
-  text-decoration: none;
-  color: inherit;
-}
-.card__img {
+.header__back {
   position: absolute;
-  width: 90%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 1rem 1rem 0 0;
-}
-.card__all-text {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 155px;
-  width: 100%;
-  padding: 0.3rem 0 0.3rem 0;
-}
-.card__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex: 1;
-}
-.card__title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 0 0 0.3rem 0.5rem;
-}
-.card__undertitle {
-  padding-left: 0.5rem;
-}
-.card__like {
   display: flex;
   align-items: center;
-  padding-right: 1rem;
+  justify-content: center;
+  align-self: start;
+  width: 50px;
+  height: 50px;
+  left: 1rem;
+  top: 1rem;
 }
-
-/* Position modifier of cards content with no label 'nouveau' */
-.all-text--nolab {
-  top: 183px;
+.header__back__img {
+  width: 25px;
+  height: 25px;
 }
 
 body {

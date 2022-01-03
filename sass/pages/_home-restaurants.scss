@@ -21,7 +21,7 @@
     display: block;
     background-color: white;
     border-radius: 1rem;
-    padding-bottom: 10.5rem;
+    padding-bottom: 10rem;
         &:link {
         text-decoration: none;
         color: inherit;
@@ -43,7 +43,7 @@
         position: relative;
         top: 155px;
         width: 100%;
-        padding: .3rem 0 .3rem 0;
+        padding: .3rem;
     }
     &__content {
         display: flex;
@@ -73,5 +73,5 @@
 
 /* Position modifier of cards content with no label 'nouveau' */
 .all-text--nolab {
-    top: 183px;
+    top: 178px;
 }

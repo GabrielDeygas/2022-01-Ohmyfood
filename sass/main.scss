@@ -1,7 +1,7 @@
 @import "./utils/variables", "./utils/functions", "./utils/mixins";
 @import "./layout/header", "./layout/footer";
-@import "./pages/home-location", "./pages/home-reservations", "./pages/home-choice";
-@import "./components/all-btn", "./components/all-cards", "./pages/home-restaurants";
+@import "./pages/home-location", "./pages/home-reservations", "./pages/home-choice", "./pages/restaurants-cover", "./pages/home-restaurants", "./pages/restaurant-menu";
+@import "./components/all-btn", "./components/all-cards", "./components/header-back";
 
 
 body {
