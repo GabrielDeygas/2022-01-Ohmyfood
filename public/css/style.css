@@ -24,7 +24,7 @@
 
 .footer {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -163,7 +163,7 @@ a:visited {
 .restaurant-cover__img {
   object-fit: cover;
   width: 100%;
-  max-height: 30rem;
+  max-height: 25rem;
   margin: 0;
 }
 
@@ -239,11 +239,16 @@ a:visited {
   top: 178px;
 }
 
+.menu-page {
+  max-width: 840px;
+  width: 100%;
+}
+
 .container-menu {
   width: 90%;
-  margin-top: -4rem;
+  margin: -4rem 0 auto 0;
   background-color: #f1f1f1;
-  padding: 0 5vw 0 5vw;
+  padding: 2rem 5% 0 5%;
   border-radius: 1.5rem 1.5rem 0 0;
 }
 
